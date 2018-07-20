@@ -1,0 +1,254 @@
+\documentclass[11pt, a4paper, ngerman]{article}
+
+% IMPORTS
+\usepackage{ntheorem}
+\usepackage[ngerman]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{mathtools} % Pfeile mit Beschriftung
+%\usepackage{amsthm}
+
+% NEWCOMMANDS
+% Syntax: \newcommand{\shortcut}{\wasrauskommensoll}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+% THEOREMSTYLES
+\theorembodyfont{\upshape}
+\newtheorem*{def*}{Definition}
+\newtheorem{theorem}{Satz}
+\newtheorem{aufgabe}{Aufgabe}
+
+\begin{document}
+
+\begin{aufgabe} (Mengensysteme)
+    \begin{enumerate}
+        \item 
+        Ist der Schnitt zweier Semialgebren wieder eine Semialgebra ? 
+        \item 
+        Sei $\mathcal{A}$ eine Semialgebra. Geben Sie $\alpha(\mathcal{A})$ an. 
+        \item 
+        Sei $\mathcal{E} \subseteq \mathcal{P}(\Omega)$ beliebig. Geben Sie $\alpha(\mathcal{E})$ an.
+        \item 
+        Erläutern Sie die Beweistechnik des Good-Set-Principles anhand eines selbstgewählten Beispiels.
+        \item 
+        Skizzieren Sie kurz den Zusammenhang zwischen den folgenden Begriffen: Semialgebra, Algebra, $\sigma$-Algebra, Dynkin-System, monotones System. 
+        \item 
+        Wieso benötigen wir so viele verschiedene Arten von Mengesystemen? 
+        \item 
+        Was ist eine Borel-$\sigma$-Algebra? 
+        \item 
+        Geben Sie einen Erzeuger der Borelschen $\sigma$-Algebra im $\R^k$ an und skizzieren Sie den Beweis. 
+    \end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe} (Messbare Funktionen)
+    \begin{enumerate}
+        \item
+        Wann ist eine Abbildung messbar ? 
+        \item 
+        Unter welcher Voraussetzung kann man diese Bedingung ggf. "abschwächen"? 
+        \item
+        Was ist eine initiale $\sigma$-Algebra ?
+        \item 
+        Was besagt das Faktorisierungslemma ? 
+        \item 
+        Skizzieren Sie das allgemeine Vorgehen bei einem Beweis per algebraischer Induktion 
+    \end{enumerate}
+    
+\end{aufgabe}
+
+\begin{aufgabe} (Produkträume)
+    \begin{enumerate}
+        \item
+        Definieren Sie das kartesische Produkt von Mengen $\Omega_i$, $i \in I \neq \emptyset$. 
+        \item
+        Wie ist das Produkt von $\sigma$-Algebren definiert?
+        \item 
+        Nennen Sie einen durchschnittstabilen Erzeuger der Produkt-$\sigma$-Algebra. 
+        \item 
+        Betrachte die Mengen 
+        \begin{align*}
+            A_1 &:= \{f:[0,1] \to \R \ \rvert \sup_{x \in [0,1]} \lvert f(x) \rvert < C \ \}, C \in (0,\infty) \\\
+            A_2 &:= \{f:[0,1] \to \R \ \rvert \text{ f besitzt keine Nullstelle} \ \} \\\
+            A_3 &:= \{f:[0,1] \to \R \ \rvert \text{ f ist stetig} \ \}. 
+        \end{align*}
+        Sind diese Mengen in $\bigotimes_{t \in [0,1]} \mathcal{B}$ enthalten? Begründen Sie Ihre Entscheidung. 
+
+            
+
+    \end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe} (Konstruktion von Maßen)
+   \begin{enumerate}
+        \item 
+        Was ist der Unterschied zwischen einem Inhalt und einem Prämaß ? Was unterscheidet ein Maß von einem Prämaß?
+        \item 
+        Sei $\mu$ ein endlicher Inhalt. Geben sie vier zur folgenden Aussage äquivalente Aussagen an: $\mu$ ist $\sigma$-sub-additiv. 
+        \item 
+        Wie lässt sich ein auf einer Algebra $\mathcal{A}$ definiertes Prämaß $\mu$ zu einem Maß auf $\sigma(\mathcal{A})$ fortsetzen?
+        \item 
+        Welche Rolle spielt die  $/sigma$-Endlichkeit bei der Fortsetzung von Prämaßen?
+        \item 
+        Sei das Maß $\nu$ absolutstetig bzgl. dem Maß $\mu$. Besitzt $\nu$ dann eine $\mu$-Dichte?
+        (Gegenbeispiel + zusätzliche Bedingung)
+        \item 
+        Was ist die Vervollständigung eines Maßraums?
+        \item 
+        In welchem Kontext benötigt man den Begriff der kompakten Approximierbarkeit?
+        \item 
+        Skizzieren Sie die Konstruktion des k-dimensionalen Lebesgue-Maßes. 
+        
+   \end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe} (Maßintegral \& fast-überall Eigenschaften)
+    \begin{enumerate}
+        \item 
+        Definieren Sie das Maßintegral für eine messbare Funktion 
+        \item
+        Skizzieren sie die Beweisidee des Satzes von Beppo Levi
+        \item 
+        Was versteht man unter einer "fast überall" Eigenschaft ?
+        \item 
+        Seien $f,g \in \mathcal{F}(\Omega, \mathcal{A})$. Geben Sie eine möglichst schwache Bedingung dafür an, dass $f \leq g$ fast überall.
+        \item 
+        Was besagt der Satz von Radon-Nikodym? Wie sieht es bei nicht $\sigma$-endlichen Maßen aus? Gegenbeispiel?
+        \item 
+        Was ist eine $\sigma$-additive-Mengenfunktion und was versteht man unter einer Jordan-Zerlegung? Ist diese eindeutig? Begründen Sie Ihre Antwort. 
+        \item 
+        Was versteht man unter einer Hahn-Zerlegung?
+        \item 
+        Wann ist ein Maß singulär bzgl. einem anderen Maß ? 
+        \item 
+        Was ist die Lebesgue-Zerlegung eines Maßes ?
+        \item 
+        Sei $(\Omega, \mathcal{A})$ messbarer Raum und seien $\mu_1, \mu_2$ Wahrscheinlichkeitsmaße auf $\mathcal{A}$. Begründen Sie, dass dann auch $\mu := \frac{1}{2}(\mu_1 + \mu_2)$
+        ein Wahrscheinlichkeitsmaß auf $\mathcal{A}$ ist und zeigen Sie, dass $\mu_i$ absolutstetig bzgl. $\mu$ ist. 
+        \item 
+        Sei $\mu$ das Zählmaß auf $\mathcal{P}(\N)$. Zeigen Sie, dass die Abbildung
+        \begin{align*}
+            f: \N \to \R, n \mapsto \frac{(-1)^n}{n}
+        \end{align*}
+        nicht $\mu$-integrierbar ist. 
+
+    
+    \end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe} (Maßkerne \& Produktmaße)
+    \begin{enumerate}
+        \item 
+        Was ist ein Maßkern ? Welche Eigenschaften von Maßkernen haben wir in der Vorlesung kennengelernt ?
+        \item
+        Wie ist das Produktmaß eines $\sigma$-endlichen Maßes $\mu$ mit einem  $\sigma$-endlichen Maßkern K definiert. Welche charakterisierende Eigenschaft besitzt es?
+        Wie zeigt man die Eindeutigkeit ? 
+        \item 
+        Was versteht man unter der Standardfortsetzung einer Funktion? Wofür wird sie gebraucht?
+        \item 
+        Formulieren sie den Satz von Fubini für Maßkerne.  
+        \item 
+        Erläutern Sie ein Anwendungsbeispiel des Satzes von Ionescu-Tulcea. 
+        \item 
+        Inwiefern kann der Satz von Cavalieri bei der Berechnung von Erwartungswerten behilflich sein? 
+    \end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe} (Verteilungen \& Verteilungsfunktionen)
+    \begin{enumerate}
+        \item 
+        Nennen Sie die charakterisierenden Eigenschaften einer Verteilungsfunktion.
+        \item 
+        Formulieren sie den Transformationssatz für Bildmaße. 
+        \item 
+        Was ist überhaupt ein Bildmaß ?
+        \item 
+        Wann besitzen zwei messbare Abbildungen das gleiche Bildmaß ? Gilt auch die Umkehrung? 
+    \end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe} (Fast sicher, stochastische \& Verteilungskonvergenz)
+    \begin{enumerate}
+        \item 
+        Definieren Sie fast sichere Konvergenz und geben Sie hinreichende und notwendige Bedingungen an. 
+        \item 
+        Formulieren Sie die Cauchy-Kriterien für fast-sichere und für stochastische Konvergenz. 
+        \item
+        Was besagt das Lemma von Pratt? Wo wird es verwendet?  
+        \item 
+        Welche Konvergenzform ist die "stärkste"? Welche Implikationen gelten? 
+        \item 
+        Geben Sie ein Beispiel dafür an, dass aus stochastischer Konvergenz im Allgemeinen nicht auch fast sichere Konvergenz folgt. 
+        \item 
+        Was können Sie über die Eindeutigkeit fast-sicherer/stochastischer Grenzwerte sagen? Wie schaut es bei Verteilungskonvergenz aus?
+        \item
+        Charakterisieren Sie die Konvergenz in Verteilung. 
+        \item 
+        Was besagt der Satz von Skorohod? 
+        \item 
+        Was ist stochastische Äquivalenz ?
+    \end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe} (Konvergenz im p-ten Mittel \& gleichgradige Integrierbarkeit)
+    \begin{enumerate}
+        \item 
+        Was ist die Minkowski-Ungleichung ? Wozu wird Sie verwendet?
+        \item 
+        Worin unterscheiden sich die Vektorräume $L_p$ und $\mathcal{L}_p$ ? 
+        \item 
+        Wieso betrachten wir ausschließlich $p \geq 1$? 
+        \item 
+        Unter welcher zusätzlichen Voraussetzung impliziert fast sichere Konvergenz die Konvergenz im (ersten) Mittel ($L_1$-Konvergenz)?
+        \item 
+        Definieren Sie gleichgradige Integrierbarkeit und geben Sie eine Charakterisierung an. 
+        \item 
+        Unter welcher zusätzlichen Bedingung folgt aus stochastischer Konvergenz auch die Konvergenz im p-ten Mittel?
+
+
+    \end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe} (Unabhängigkeit \& 0-1-Gesetze)
+   \begin{enumerate}
+        \item 
+        Definieren Sie die Unabhängigkeit von Zufallsvariablen.
+        \item 
+        Geben Sie eine möglichst schwache Bedingung für die Unabhängigkeit zweier Zufallsvariablen an. 
+        \item 
+        Zeigen oder widerlegen Sie: Sind $X,Y$ Zufallsgrößen mit  $P^{(X,Y)} = P^X \times P^Y$, dann sind $X,Y$ unabhängig. 
+        \item 
+        Wann sind zwei Zufallsvariablen $X,Y$ unkorreliert? Sind $X,Y$ dann auch unabhängig? 
+        \item 
+        Welche Modellierung bietet sich meist an, um eine Folge unabhängiger Zufallsgrößen mit gegebener Verteilung zu modellieren? 
+        \item 
+        Definieren Sie die Faltung zweier Wahrscheinlichkeitsmaße. 
+        \item   
+        Formulieren Sie das Lemma von Borel-Cantelli 
+        \item 
+        Skizzieren Sie die Beweisidee des 0-1-Gesetzes. 
+        \item 
+        Sei $f: \Omega \to \bar{\R}$ eine $\mathcal{A}_{\infty}$/$\bar{\mathcal{B}}$-messbare Abbildung. Was gilt dann fast sicher? 
+    \end{enumerate}
+    
+\end{aufgabe}
+
+\begin{aufgabe} (Gesetze der großen Zahlen)
+    \begin{enumerate}
+        \item 
+        Nennen Sie hinreichende und notwendige Kriterien für die Konvergenz zufälliger Reihen. 
+        \item 
+        Sei $(X_n)_{n \in \N}$ eine iid Folge von Zufallsgrößen und $(c_i)_{i \in \N}$ eine Folge in $\R$. 
+        Nennen Sie eine notwendige und hinreichende Bedingung für die Konvergenz der zufälligen Reihe $\sum_{n=1}^{\infty} c_n X_n$ .  
+        \item 
+        Formulieren sie zwei Versionen des Starken Gesetz der Großen Zahlen (SLLN). 
+    \end{enumerate} 
+\end{aufgabe}
+
+\end{document}
