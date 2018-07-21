@@ -31,9 +31,13 @@
         \item 
         Ist der Schnitt zweier Semialgebren wieder eine Semialgebra? 
         \item 
+        Ist die Vereinigung zweier $\sigma$-Algebren wieder eine $\sigma$-Algebra? 
+        \item 
         Sei $\mathcal{A}$ eine Semialgebra. Geben Sie $\alpha(\mathcal{A})$ an. 
         \item 
         Sei $\mathcal{E} \subseteq \mathcal{P}(\Omega)$ beliebig. Geben Sie $\alpha(\mathcal{E})$ an.
+        \item 
+        Geben Sie ein monotones System an, dass keine $\sigma$-Algebra ist. 
         \item 
         Erläutern Sie die Beweistechnik des Good-Set-Principles anhand eines selbstgewählten Beispiels.
         \item 
@@ -92,6 +96,8 @@
         \item 
         Was ist der Unterschied zwischen einem Inhalt und einem Prämaß ? Was unterscheidet ein Maß von einem Prämaß?
         \item 
+        Geben Sie ein Beispiel für einen Inhalt, der kein Maß ist. 
+        \item 
         Sei $\mu$ ein endlicher Inhalt. Geben sie vier zur folgenden Aussage äquivalente Aussagen an: $\mu$ ist $\sigma$-sub-additiv. 
         \item 
         Wie lässt sich ein auf einer Algebra $\mathcal{A}$ definiertes Prämaß $\mu$ zu einem Maß auf $\sigma(\mathcal{A})$ fortsetzen?
@@ -117,7 +123,11 @@
         \item
         Skizzieren sie die Beweisidee des Satzes von Beppo Levi. 
         \item 
-        Was versteht man unter einer "fast überall" Eigenschaft ?
+        Seien $X, X_1, X_2,...$ Zufallsgrößen auf einem Wahrscheinlichkeitsraum $(\Omega, \mathcal{A},P)$. Lässt sich der Satz von der dominierten Konvergenz auch anwenden, wenn die punktweise Konvergenz durch stochastische Konvergenz ersetzt wird? 
+        \item 
+        Lässt sich durch jede nicht negative messbare Funktion ein Maß definieren? Lässt sich jedes Maß bezüglich eines anderen Maßes so darstellen?
+        \item 
+        Was versteht man unter einer "fast überall" Eigenschaft?
         \item 
         Seien $f,g \in \mathcal{F}(\Omega, \mathcal{A})$. Geben Sie eine möglichst schwache Bedingung dafür an, dass $f \leq g$ fast überall.
         \item 
@@ -127,9 +137,9 @@
         \item 
         Was versteht man unter einer Hahn-Zerlegung?
         \item 
-        Wann ist ein Maß singulär bzgl. einem anderen Maß ? 
+        Wann ist ein Maß singulär bzgl. einem anderen Maß? 
         \item 
-        Was ist die Lebesgue-Zerlegung eines Maßes ?
+        Was ist die Lebesgue-Zerlegung eines Maßes?
         \item 
         Sei $(\Omega, \mathcal{A})$ messbarer Raum und seien $\mu_1, \mu_2$ Wahrscheinlichkeitsmaße auf $\mathcal{A}$. Begründen Sie, dass dann auch $\mu := \frac{1}{2}(\mu_1 + \mu_2)$
         ein Wahrscheinlichkeitsmaß auf $\mathcal{A}$ ist und zeigen Sie, dass $\mu_i$ absolutstetig bzgl. $\mu$ ist. 
@@ -152,9 +162,9 @@
         Wie ist das Produktmaß eines $\sigma$-endlichen Maßes $\mu$ mit einem  $\sigma$-endlichen Maßkern K definiert. Welche charakterisierende Eigenschaft besitzt es?
         Wie zeigt man die Eindeutigkeit ? 
         \item 
-        Was versteht man unter einer Standardfortsetzung ? Wofür wird sie gebraucht?
+        Was versteht man unter einer Standardfortsetzung? Wofür wird sie gebraucht?
         \item 
-        Formulieren sie den Satz von Fubini für Maßkerne.  
+        Formulieren sie den Satz von Fubini für Maßkerne. Lassen sich die iterierten Integrale vertauschen? 
         \item
         Skizzieren Sie die Beweisidee des Satzes von Ionescu-Tulcea. 
         \item 
@@ -167,15 +177,15 @@
 \begin{aufgabe} (Verteilungen \& Verteilungsfunktionen)
     \begin{enumerate}
         \item 
-        Nennen Sie die charakterisierenden Eigenschaften einer Verteilungsfunktion.
+        Nennen Sie die charakterisierenden Eigenschaften einer Verteilungsfunktion. 
         \item 
         Jede Zufallsgröße definiert eine Verteilungsfunktion. Lässt sich dann auch für eine gegebene Verteilungsfunktion eine Zufallsgröße mit dieser dadurch definierten Verteilung konstruieren? 
         \item 
         Formulieren sie den Transformationssatz für Bildmaße. 
         \item 
-        Was ist überhaupt ein Bildmaß ?
+        Was ist überhaupt ein Bildmaß?
         \item 
-        Wann besitzen zwei messbare Abbildungen das gleiche Bildmaß ? Gilt auch die Umkehrung? 
+        Wann besitzen zwei messbare Abbildungen das gleiche Bildmaß? Gilt auch die Umkehrung? 
     \end{enumerate}
 \end{aufgabe}
 
@@ -188,7 +198,7 @@
         \item
         Was besagt das Lemma von Pratt? 
         \item 
-        Welche Konvergenzform ist die "stärkste"? Welche Implikationen gelten? 
+        Welche Konvergenzform ist die "stärkste"? Welche Implikationen gelten?  
         \item 
         Geben Sie ein Beispiel dafür an, dass aus stochastischer Konvergenz im Allgemeinen nicht auch fast sichere Konvergenz folgt. 
         \item 
@@ -196,9 +206,9 @@
         \item
         Charakterisieren Sie die Konvergenz in Verteilung. 
         \item 
-        Was besagt der Satz von Skorohod? 
+        Was besagt der Satz von Skorohod? Geben Sie die im Beweis verwendete Konstruktion explizit an. 
         \item 
-        Was ist stochastische Äquivalenz?
+        Was ist stochastische Äquivalenz? Zeigen Sie, dass dadurch eine Äquivalenzrelation definiert ist. 
     \end{enumerate}
 \end{aufgabe}
 
@@ -214,6 +224,8 @@
         Unter welcher zusätzlichen Voraussetzung impliziert fast sichere Konvergenz die Konvergenz im (ersten) Mittel ($L_1$-Konvergenz)?
         \item 
         Definieren Sie gleichgradige Integrierbarkeit und geben Sie eine Charakterisierung an. 
+        \item 
+        Geben Sie ein Beispiel für eine nicht gleichgradig integrierbare Folge von Zufallsgrößen. 
         \item 
         Unter welcher zusätzlichen Bedingung folgt aus stochastischer Konvergenz auch die Konvergenz im p-ten Mittel?
 
@@ -249,6 +261,8 @@
     \begin{enumerate}
         \item 
         Nennen Sie hinreichende und notwendige Kriterien für die Konvergenz zufälliger Reihen. 
+        \item
+        Formulieren sie den Kolmogorovschen Drei-Reihen-Satz. Gilt die Rückrichtung auch, falls die Bedingung nur für ein $c \in (0, \infty)$ erfüllt ist?
         \item 
         Sei $(X_n)_{n \in \N}$ eine iid Folge von Zufallsgrößen und $(c_i)_{i \in \N}$ eine Folge in $\R$. 
         Nennen Sie eine notwendige und hinreichende Bedingung für die Konvergenz der zufälligen Reihe $\sum_{n=1}^{\infty} c_n X_n$ .  
