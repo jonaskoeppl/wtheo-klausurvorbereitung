@@ -26,6 +26,7 @@
 
 \begin{document}
 
+    
 \begin{aufgabe} (Mengensysteme)
     \begin{enumerate}
         \item 
@@ -127,7 +128,7 @@
         \item 
         Lässt sich durch jede nicht negative messbare Funktion ein Maß definieren? Lässt sich jedes Maß bezüglich eines anderen Maßes so darstellen?
         \item 
-        Was versteht man unter einer "fast überall" Eigenschaft?
+        Was versteht man unter einer fast überall Eigenschaft?
         \item 
         Seien $f,g \in \mathcal{F}(\Omega, \mathcal{A})$. Geben Sie eine möglichst schwache Bedingung dafür an, dass $f \leq g$ fast überall.
         \item 
@@ -221,7 +222,13 @@
         \item 
         Wieso betrachten wir ausschließlich $p \geq 1$? 
         \item 
-        Unter welcher zusätzlichen Voraussetzung impliziert fast sichere Konvergenz die Konvergenz im (ersten) Mittel ($L_1$-Konvergenz)?
+        Zeigen Sie, dass durch die Abbildung
+        \begin{align*}
+            p : L_p(\Omega, \mathcal{A}, P) \to [0,\infty ), X \mapsto (E(\rvert X \lvert^p))^{\frac{1}{p}}
+        \end{align*}
+        eine Norm definiert wird. Ist der resultierende normierte Vektorraum vollständig? 
+        \item 
+        Unter welcher zusätzlichen Voraussetzung impliziert fast sichere Konvergenz die Konvergenz im (ersten) Mittel ($L_1$-Konvergenz)? 
         \item 
         Definieren Sie gleichgradige Integrierbarkeit und geben Sie eine Charakterisierung an. 
         \item 
@@ -247,8 +254,12 @@
         Welche Modellierung bietet sich meist an, um eine Folge unabhängiger Zufallsgrößen mit gegebener Verteilung zu modellieren? 
         \item 
         Definieren Sie die Faltung zweier Wahrscheinlichkeitsmaße. 
+        \item 
+        Seien $\mu_1$ und $\mu_2$ zwei Wahrscheinlichkeitsmaße auf $\mathcal{B}$. Sei ferner $\mu_1$ absolutstetig bezüglich $\lambda$. Besitzt das Faltungsprodukt $\mu_1 * \mu_2$ dann ebenfalls eine $\lambda$-Dichte? Geben Sie diese an oder konstruieren Sie ein Gegenbeispiel. 
         \item   
         Formulieren Sie das Lemma von Borel-Cantelli. Gelten auch die Umkehrungen? 
+        \item
+        Was ist die terminale $\sigma$-Algebra bzgl. einer Folge von Zufallsgrößen $(X_n)_{n \in \N}$? Kennen Sie Mengen, die in $\mathcal{A}_{\infty}$ enthalten sind? 
         \item 
         Skizzieren Sie die Beweisidee des 0-1-Gesetzes. 
         \item 
@@ -268,6 +279,8 @@
         Nennen Sie eine notwendige und hinreichende Bedingung für die Konvergenz der zufälligen Reihe $\sum_{n=1}^{\infty} c_n X_n$ .  
         \item 
         Formulieren sie beide Versionen des Starken Gesetz der Großen Zahlen (SLLN).
+        \item
+        Ist die in der ersten Version des SLLN gegebene Bedingung nicht nur hinreichend sondern auch notwendig?
     \end{enumerate} 
 \end{aufgabe}
 
