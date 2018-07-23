@@ -61,11 +61,11 @@
         \item 
         Sind stetige Abbildungen im Allgemeinen messbar? 
         \item 
-        Für $n \in \N$ sei $X_n \in \mathcal{F}(\R, \mathcal{B})$. Beurteilen Sie ob es sich bei den Folgenden Mengen um Borelmengen handelt: 
+        Für $n \in \N$ sei $X_n \in \mathcal{F}(\Omega, \mathcal{A})$. Beurteilen Sie ob es sich bei den Folgenden Mengen um messbare Mengen handelt: 
         \begin{align*}
-            A_1 :&= \{\omega \in \R : \{X_n(\omega): n \in \N \} \text{ liegt dicht in } \R \}, \\\
-            A_2 :&= \{\omega \in \R : (X_n(\omega))_{n \in \N} \text{ konvergiert in } \R \}, \\\
-            A_3 :&= \{\omega \in \R : \sup_{n \in \N} \lvert X_n \rvert \leq C \}, C > 0. 
+            A_1 :&= \{\omega \in \Omega : \{X_n(\omega): n \in \N \} \text{ liegt dicht in } \R \}, \\\
+            A_2 :&= \{\omega \in \Omega : (X_n(\omega))_{n \in \N} \text{ konvergiert in } \R \}, \\\
+            A_3 :&= \{\omega \in \Omega : \sup_{n \in \N} \lvert X_n \rvert \leq C \}, C > 0. 
         \end{align*}
         \item
         Was ist eine initiale $\sigma$-Algebra?
@@ -157,6 +157,8 @@
             f: \N \to \R, n \mapsto \frac{(-1)^n}{n}
         \end{align*}
         nicht $\mu$-integrierbar ist. 
+        \item
+        Sei $\mu$ das Zählmaß auf $\mathcal{B}$ und $\nu$ ein weiteres Maß, dass eine $\mu$-Dichte $f$ besitzt. Kann f stetig sein? 
 
     
     \end{enumerate}
@@ -271,6 +273,8 @@
         Skizzieren Sie die Beweisidee des 0-1-Gesetzes. 
         \item 
         Sei $f: \Omega \to \bar{\R}$ eine $\mathcal{A}_{\infty}$/$\bar{\mathcal{B}}$-messbare Abbildung. Was gilt dann fast sicher? 
+        \item 
+        Geben Sie eine Folge von Zufallsvariablen $(X_n)_{n \in \N}$ auf einem Wahrscheinlichkeitsraum $(\Omega, \mathcal{A}, P)$ an, sodass die assoziierte terminale $\sigma$-Algebra Ereignisse $A$ mit $0 < P(A) < 1$ enthält. 
     \end{enumerate}
     
 \end{aufgabe}
@@ -288,6 +292,10 @@
         Formulieren sie beide Versionen des Starken Gesetz der Großen Zahlen (SLLN).
         \item
         Ist die in der ersten Version des SLLN gegebene Bedingung nicht nur hinreichend sondern auch notwendig?
+        \item 
+        Geben Sie ein Beispiel für eine Folge unabhängiger Zufallsgrößen, die nicht dem Starken Gesetz der Großen Zahlen genügt. 
+        \newline   
+        (D.h. $P( \{ lim_{n \to \infty} \frac{1}{n}\sum_{i=1}^n (X_i - E(X_i)) = 0 \} ) < 1$). 
     \end{enumerate} 
 \end{aufgabe}
 
