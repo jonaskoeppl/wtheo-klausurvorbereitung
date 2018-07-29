@@ -234,8 +234,14 @@
             d : \mathcal{F}(\Omega, \mathcal{A}) \times \mathcal{F}(\Omega, \mathcal{A}) \to [0, \infty], (X,Y) \mapsto E(\frac{\lvert X - Y \rvert}{1 + \lvert X - Y \rvert})
         \end{align*}
         Zeigen Sie, dass eine Folge von Zufallsgrößen $(X_n)_{n \in \N}$ auf $(\Omega, \mathcal{A}, P)$ genau dann stochastisch gegen eine Zufallsgröße $X$ konvergiert, wenn $\lim_{n \to \infty}d(X, X_n) = 0$. 
-
-    \end{enumerate}
+        \item
+        Sei $(\Omega, \mathcal{A}, P)$ ein Wahrscheinlichkeitsraum und setze 
+        \begin{align*}
+            F(\Omega, \mathcal{A}) := \{ [X]_{\sim} : X \in \mathcal{F}(\Omega, \mathcal{A})\} \text{ wobei } X \sim Y \iff X = Y \text{ P-fast-sicher }. 
+        \end{align*}  
+        Zeigen oder widerlegen Sie: Es gibt eine Metrik $d$ auf $F$, sodass gilt: $X_n \to X \text{P-f.s.} \iff d(X,X_n) \to 0$. 
+      
+        \end{enumerate}
 \end{aufgabe}
 
 \begin{aufgabe} (Konvergenz im p-ten Mittel \& gleichgradige Integrierbarkeit)
