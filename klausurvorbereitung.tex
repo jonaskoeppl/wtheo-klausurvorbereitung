@@ -158,9 +158,9 @@
         \end{align*}
         nicht $\mu$-integrierbar ist. 
         \item
-        Sei $\mu$ das Zählmaß auf $\mathcal{B}$ und $\nu$ ein weiteres Maß, dass eine $\mu$-Dichte $f$ besitzt. Kann f stetig sein? 
+        Sei $\mu$ das Zählmaß auf $\mathcal{B}$ und $\nu$ ein  Wahrscheinlichkeitsmaß, dass eine $\mu$-Dichte $f$ besitzt. Kann f stetig sein? 
         \item 
-        Betrachte für $a,b \in \R$ mit $a < b$ den Maßraum $(\Omega, \mathcal{A}, \mu) = ([a,b], \mathcal{B}\cup [a,b], \lambda_{\mathcal{B}\cup [a,b]})$ und sei $f \in \mathcal{L}(\Omega, \mathcal{A}, \mu)$. 
+        Betrachte für $a,b \in \R$ mit $a < b$ den Maßraum $(\Omega, \mathcal{A}, \mu) = ([a,b], \mathcal{B} \cap [a,b], \lambda_{\mathcal{B}\cap [a,b]})$ und sei $f \in \mathcal{L}(\Omega, \mathcal{A}, \mu)$. 
         Zeigen Sie, dass dann die Abbildung 
         \begin{align*}
             g : (a,b) \to \R, x \mapsto \int_{[a,x]}f(y)\lambda(dy)
@@ -215,7 +215,7 @@
         \item
         Was besagt das Lemma von Pratt? 
         \item 
-        Welche Konvergenzform ist die \"stärkste\"? Welche Implikationen gelten?  
+        Welche Konvergenzform ist die stärkste? Welche Implikationen gelten?  
         \item 
         Geben Sie ein Beispiel dafür an, dass aus stochastischer Konvergenz im Allgemeinen nicht auch fast sichere Konvergenz folgt. 
         \item 
@@ -228,6 +228,12 @@
         Was ist stochastische Äquivalenz? Zeigen Sie, dass dadurch eine Äquivalenzrelation definiert ist. 
         \item 
         Sei $(X_n)_{n \in \N}$ eine Folge von Zufallsgrößen und gelte $\sum_{n=1}^{\infty}E(\lvert X_n\rvert^p) < \infty$ für ein $p > 0$. Zeigen Sie: $P[lim_{n \to \infty} X_n = 0] = 1$. 
+        \item 
+        Sei $(\Omega, \mathcal{A}, P)$ ein Wahrscheinlichkeitsraum und betrachte die Abbildung:
+        \begin{align*}
+            d : \mathcal{F}(\Omega, \mathcal{A}) \times \mathcal{F}(\Omega, \mathcal{A}) \to [0, \infty], (X,Y) \mapsto E(\frac{\lvert X - Y \rvert}{1 + \lvert X - Y \rvert})
+        \end{align*}
+
     \end{enumerate}
 \end{aufgabe}
 
@@ -265,9 +271,13 @@
         \item 
         Geben Sie eine möglichst schwache Bedingung für die Unabhängigkeit zweier Zufallsvariablen an. 
         \item 
-        Zeigen oder widerlegen Sie: Sind $X,Y$ Zufallsgrößen mit  $P^{(X,Y)} = P^X \times P^Y$, dann sind $X,Y$ unabhängig. 
+        Zeigen oder widerlegen Sie: Sind $X,Y$ Zufallsgrößen auf einem Wahrscheinlichkeitsraum $(\Omega, \mathcal{A}, P)$ mit  $P^{(X,Y)} = P^X \times P^Y$, dann sind $X,Y$ unabhängig. 
+        \item
+        Zeigen oder widerlegen Sie: Sind $X,Y$ Zufallsgrößen auf einem Wahrscheinlichkeitsraum $(\Omega, \mathcal{A}, P)$ mit $P^{X+Y} = P^X * P^Y$, dann sind $X,Y$ unabhängig. 
         \item 
         Wann sind zwei Zufallsvariablen $X,Y$ unkorreliert? Sind $X,Y$ dann auch unabhängig? 
+        \item
+        Ist eine Familie paarweise unabhängiger Zufallsvariablen unabhängig? 
         \item 
         Welche Modellierung bietet sich meist an, um eine Folge unabhängiger Zufallsgrößen mit gegebener Verteilung zu modellieren? 
         \item 
